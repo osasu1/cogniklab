@@ -1,0 +1,2651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cogniklab — Build Job-Ready Tech Talent</title>
+<meta name="description" content="Cogniklab builds job-ready tech talent and the systems that make that talent easier to trust, hire, and deploy. Cohort-based data and BI programs in Nigeria.">
+<meta name="keywords" content="data analyst course Nigeria, business intelligence training, learn SQL Power BI, tech skills beginners, job ready tech training, AI data academy, data fellowship Nigeria">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0A0F1E;
+  --midnight: #060B17;
+  --charcoal: #1A1F2E;
+  --surface: #111827;
+  --surface2: #161D2E;
+  --surface3: #1E2640;
+  --border: rgba(255,255,255,0.08);
+  --border2: rgba(255,255,255,0.14);
+  --electric: #2563EB;
+  --electric-light: #3B82F6;
+  --teal: #0D9488;
+  --teal-light: #14B8A6;
+  --accent: #6366F1;
+  --white: #FFFFFF;
+  --gray-100: #F1F5F9;
+  --gray-200: #E2E8F0;
+  --gray-400: #94A3B8;
+  --gray-500: #64748B;
+  --gray-600: #475569;
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --text-muted: #64748B;
+  --gradient-primary: linear-gradient(135deg, #2563EB 0%, #0D9488 100%);
+  --gradient-hero: radial-gradient(ellipse at 20% 50%, rgba(37,99,235,0.15) 0%, transparent 60%), radial-gradient(ellipse at 80% 20%, rgba(13,148,136,0.1) 0%, transparent 60%);
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.3), 0 0 0 1px rgba(255,255,255,0.05);
+  --shadow-glow: 0 0 40px rgba(37,99,235,0.15);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--midnight);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── UTILITIES ─────────────────────────────────────────── */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.container-sm { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+.section { padding: 96px 0; }
+.section-sm { padding: 64px 0; }
+.section-alt { background: var(--navy); }
+.section-surface { background: var(--charcoal); }
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--teal-light);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.label::before {
+  content: '';
+  width: 20px; height: 1px;
+  background: var(--teal-light);
+  display: inline-block;
+}
+
+.headline {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+.headline-xl { font-size: clamp(42px, 6vw, 80px); }
+.headline-lg { font-size: clamp(32px, 4vw, 56px); }
+.headline-md { font-size: clamp(24px, 3vw, 40px); }
+.headline-sm { font-size: clamp(18px, 2.5vw, 28px); }
+
+.text-gradient {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subheadline {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+}
+.btn-primary {
+  background: var(--gradient-primary);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(37,99,235,0.35);
+}
+.btn-primary:hover { transform: translateY(-1px); box-shadow: 0 8px 32px rgba(37,99,235,0.45); }
+.btn-secondary {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border2);
+}
+.btn-secondary:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.25); }
+.btn-ghost {
+  background: transparent;
+  color: var(--electric-light);
+  padding: 10px 0;
+  font-size: 14px;
+}
+.btn-ghost:hover { gap: 12px; }
+.btn-ghost::after { content: '→'; font-size: 16px; transition: transform 0.2s; }
+.btn-ghost:hover::after { transform: translateX(3px); }
+
+/* Cards */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  transition: all 0.25s ease;
+}
+.card:hover { border-color: var(--border2); transform: translateY(-2px); box-shadow: var(--shadow-glow); }
+.card-glass {
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+
+/* Grid layouts */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.grid-auto { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+
+/* Badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: var(--font-mono);
+}
+.badge-blue { background: rgba(37,99,235,0.15); color: #93C5FD; border: 1px solid rgba(37,99,235,0.3); }
+.badge-teal { background: rgba(13,148,136,0.15); color: #5EEAD4; border: 1px solid rgba(13,148,136,0.3); }
+.badge-red { background: rgba(239,68,68,0.15); color: #FCA5A5; border: 1px solid rgba(239,68,68,0.3); }
+.badge-green { background: rgba(34,197,94,0.15); color: #86EFAC; border: 1px solid rgba(34,197,94,0.3); }
+.badge-amber { background: rgba(245,158,11,0.15); color: #FCD34D; border: 1px solid rgba(245,158,11,0.3); }
+
+/* ─── NAVBAR ─────────────────────────────────────────────── */
+#navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  padding: 0 24px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  background: rgba(6,11,23,0.85);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+.nav-inner {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.nav-logo {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--white);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav-logo-mark {
+  width: 32px; height: 32px;
+  background: var(--gradient-primary);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 800;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+}
+.nav-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s;
+}
+.nav-links a:hover { color: var(--white); background: rgba(255,255,255,0.05); }
+.nav-cta { display: flex; align-items: center; gap: 12px; }
+.btn-nav {
+  padding: 9px 20px;
+  background: var(--gradient-primary);
+  color: #fff;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.btn-nav:hover { opacity: 0.9; transform: translateY(-1px); }
+.nav-hamburger { display: none; cursor: pointer; background: none; border: none; color: white; font-size: 22px; }
+
+/* ─── PAGE SYSTEM ────────────────────────────────────────── */
+.page { display: none; padding-top: 68px; min-height: 100vh; }
+.page.active { display: block; }
+
+/* ─── HERO ───────────────────────────────────────────────── */
+#hero {
+  position: relative;
+  padding: 120px 24px 100px;
+  overflow: hidden;
+  background: var(--midnight);
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-hero);
+  pointer-events: none;
+}
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+.hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.hero-content { position: relative; z-index: 1; }
+.hero-headline {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(44px, 5.5vw, 76px);
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+  margin-bottom: 24px;
+}
+.hero-sub {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 16px;
+  max-width: 520px;
+}
+.hero-body {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 40px;
+  max-width: 480px;
+}
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 56px; }
+.hero-stats {
+  display: flex;
+  gap: 32px;
+  border-top: 1px solid var(--border);
+  padding-top: 32px;
+}
+.hero-stat-num {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--white);
+}
+.hero-stat-label { font-size: 13px; color: var(--text-muted); }
+
+/* Hero visual */
+.hero-visual {
+  position: relative;
+  z-index: 1;
+}
+.dashboard-mock {
+  background: var(--surface);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius-xl);
+  padding: 24px;
+  box-shadow: 0 32px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.05);
+  position: relative;
+}
+.dashboard-mock::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, rgba(37,99,235,0.2), transparent 50%, rgba(13,148,136,0.15));
+  z-index: -1;
+}
+.dash-topbar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+.dash-dot { width: 10px; height: 10px; border-radius: 50%; }
+.d1 { background: #FF5F57; }
+.d2 { background: #FFBD2E; }
+.d3 { background: #28CA42; }
+.dash-title {
+  margin-left: 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+}
+.dash-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.dash-metric {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px;
+}
+.dm-val {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.dm-val.blue { color: var(--electric-light); }
+.dm-val.teal { color: var(--teal-light); }
+.dm-val.green { color: #4ADE80; }
+.dm-label { font-size: 10px; color: var(--text-muted); font-family: var(--font-mono); }
+.dash-chart-area {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  margin-bottom: 14px;
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  overflow: hidden;
+}
+.chart-bar {
+  flex: 1;
+  background: linear-gradient(180deg, var(--electric) 0%, rgba(37,99,235,0.3) 100%);
+  border-radius: 3px 3px 0 0;
+  animation: barGrow 1s ease-out forwards;
+  transform-origin: bottom;
+}
+@keyframes barGrow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+.dash-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.dash-mini {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px;
+}
+.dm-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.dm-name { font-size: 11px; color: var(--text-muted); font-family: var(--font-mono); }
+.dm-bar-wrap { height: 4px; background: var(--surface3); border-radius: 4px; overflow: hidden; }
+.dm-bar-fill { height: 100%; border-radius: 4px; background: var(--gradient-primary); }
+
+/* Floating badges on hero */
+.hero-badge {
+  position: absolute;
+  background: var(--surface);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  font-size: 12px;
+  font-family: var(--font-mono);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  animation: float 4s ease-in-out infinite;
+}
+.hb1 { top: -16px; right: 20px; color: #4ADE80; animation-delay: 0s; }
+.hb2 { bottom: 30px; left: -20px; color: var(--electric-light); animation-delay: 1.5s; }
+.hb3 { top: 40%; right: -20px; color: var(--teal-light); animation-delay: 0.8s; }
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* ─── CREDIBILITY STRIP ──────────────────────────────────── */
+#credibility-strip {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 24px;
+}
+.strip-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+.strip-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 28px;
+  border-right: 1px solid var(--border);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+.strip-item:last-child { border-right: none; }
+.strip-icon {
+  width: 32px; height: 32px;
+  background: rgba(37,99,235,0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+/* ─── HOW IT WORKS ───────────────────────────────────────── */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+.step-card {
+  background: var(--surface);
+  padding: 36px 28px;
+  position: relative;
+  transition: background 0.2s;
+}
+.step-card:hover { background: var(--surface2); }
+.step-number {
+  font-family: var(--font-display);
+  font-size: 64px;
+  font-weight: 800;
+  color: rgba(255,255,255,0.05);
+  line-height: 1;
+  margin-bottom: -8px;
+  letter-spacing: -0.05em;
+}
+.step-icon {
+  width: 44px; height: 44px;
+  background: var(--gradient-primary);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.step-title {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--white);
+}
+.step-desc { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+
+/* ─── PROGRAMS ───────────────────────────────────────────── */
+.program-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.program-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.program-card:hover { transform: translateY(-4px); border-color: var(--border2); box-shadow: 0 20px 60px rgba(0,0,0,0.3), var(--shadow-glow); }
+.program-card.featured { border-color: rgba(37,99,235,0.4); }
+.program-card-header {
+  padding: 32px;
+  background: linear-gradient(135deg, var(--surface2) 0%, var(--surface3) 100%);
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+.program-card-header::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 1px;
+  background: var(--gradient-primary);
+}
+.program-badge { margin-bottom: 12px; }
+.program-title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  letter-spacing: -0.02em;
+}
+.program-desc { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+.program-card-body { padding: 28px 32px; }
+.program-meta {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.pm-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+}
+.pm-icon { font-size: 14px; }
+.program-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.tool-tag {
+  padding: 4px 10px;
+  background: var(--surface3);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+}
+.program-outcome {
+  padding: 16px;
+  background: rgba(37,99,235,0.06);
+  border: 1px solid rgba(37,99,235,0.15);
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+.program-outcome strong { color: var(--electric-light); }
+
+/* ─── FOR EMPLOYERS TEASER ───────────────────────────────── */
+.employers-teaser {
+  background: linear-gradient(135deg, var(--surface2) 0%, var(--surface3) 100%);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius-xl);
+  padding: 64px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+/* ─── TESTIMONIALS ───────────────────────────────────────── */
+.testimonial-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+.testimonial-quote {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+.testimonial-quote::before { content: '"'; font-size: 40px; color: var(--electric); line-height: 0; vertical-align: -16px; margin-right: 4px; }
+.testi-author { display: flex; align-items: center; gap: 12px; }
+.testi-avatar {
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14px;
+}
+.testi-name { font-weight: 500; font-size: 14px; }
+.testi-role { font-size: 12px; color: var(--text-muted); }
+
+/* ─── CTA SECTION ────────────────────────────────────────── */
+.cta-section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: -100px; left: 50%; transform: translateX(-50%);
+  width: 600px; height: 300px;
+  background: radial-gradient(ellipse, rgba(37,99,235,0.2) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ─── COURSE PAGE ────────────────────────────────────────── */
+.course-hero {
+  padding: 80px 24px;
+  background: var(--midnight);
+  position: relative;
+  overflow: hidden;
+}
+.course-hero::before {
+  content: '';
+  position: absolute;
+  top: -200px; right: -200px;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(37,99,235,0.12) 0%, transparent 70%);
+}
+.course-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 64px;
+  align-items: start;
+}
+.course-summary-card {
+  background: var(--surface);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius-xl);
+  padding: 32px;
+  position: sticky;
+  top: 88px;
+  box-shadow: 0 32px 80px rgba(0,0,0,0.4);
+}
+.price-block { margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+.price-original {
+  font-size: 18px;
+  color: var(--text-muted);
+  text-decoration: line-through;
+  margin-bottom: 4px;
+}
+.price-discounted {
+  font-family: var(--font-display);
+  font-size: 44px;
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.price-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: var(--font-mono);
+}
+.course-meta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.cmg-item {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 12px;
+}
+.cmg-label { font-size: 10px; color: var(--text-muted); font-family: var(--font-mono); margin-bottom: 4px; }
+.cmg-val { font-size: 14px; font-weight: 500; color: var(--white); }
+
+/* Curriculum accordion */
+.curriculum-week {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: 8px;
+  transition: border-color 0.2s;
+}
+.curriculum-week:hover { border-color: var(--border2); }
+.week-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 24px;
+  cursor: pointer;
+  background: var(--surface);
+  user-select: none;
+}
+.week-header:hover { background: var(--surface2); }
+.week-num {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--electric-light);
+  min-width: 48px;
+}
+.week-title { font-size: 15px; font-weight: 500; flex: 1; }
+.week-chevron { color: var(--text-muted); transition: transform 0.2s; font-size: 14px; }
+.week-body {
+  padding: 0 24px 18px 88px;
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  display: none;
+  background: var(--surface);
+}
+.curriculum-week.open .week-body { display: block; }
+.curriculum-week.open .week-chevron { transform: rotate(180deg); }
+.curriculum-week.open .week-header { border-bottom: 1px solid var(--border); }
+
+/* FAQ */
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+.faq-q {
+  padding: 18px 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  background: var(--surface);
+}
+.faq-q:hover { background: var(--surface2); }
+.faq-a {
+  padding: 0 24px 16px;
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  display: none;
+  background: var(--surface);
+}
+.faq-item.open .faq-a { display: block; }
+
+/* ─── ABOUT ──────────────────────────────────────────────── */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.value-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.value-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--gradient-primary);
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+.value-card:hover::after { transform: scaleX(1); }
+.value-icon {
+  font-size: 28px;
+  margin-bottom: 16px;
+  display: block;
+}
+.value-title {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.value-desc { font-size: 14px; color: var(--text-muted); line-height: 1.65; }
+
+/* ─── FOR EMPLOYERS ──────────────────────────────────────── */
+.pain-points {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.pain-card {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+.pain-icon { font-size: 24px; margin-bottom: 12px; display: block; }
+.solution-block {
+  background: linear-gradient(135deg, rgba(37,99,235,0.06), rgba(13,148,136,0.06));
+  border: 1px solid rgba(37,99,235,0.2);
+  border-radius: var(--radius-xl);
+  padding: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.employer-form {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 40px;
+}
+
+/* Forms */
+.form-group { margin-bottom: 20px; }
+.form-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  font-family: var(--font-mono);
+  letter-spacing: 0.05em;
+}
+.form-input, .form-select, .form-textarea {
+  width: 100%;
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius-md);
+  padding: 13px 16px;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 15px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  appearance: none;
+  outline: none;
+}
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+  border-color: var(--electric);
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+}
+.form-input::placeholder, .form-textarea::placeholder { color: var(--text-muted); }
+.form-textarea { min-height: 120px; resize: vertical; }
+.form-select { cursor: pointer; }
+.form-select option { background: var(--surface); }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+/* ─── BLOG ───────────────────────────────────────────────── */
+.blog-featured {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 40px;
+  transition: all 0.25s;
+}
+.blog-featured:hover { border-color: var(--border2); transform: translateY(-2px); }
+.blog-featured-img {
+  background: linear-gradient(135deg, var(--surface2), var(--surface3));
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  position: relative;
+  overflow: hidden;
+}
+.blog-featured-img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-hero);
+}
+.blog-featured-content { padding: 40px; }
+.blog-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all 0.25s;
+}
+.blog-card:hover { border-color: var(--border2); transform: translateY(-2px); }
+.blog-img {
+  height: 160px;
+  background: linear-gradient(135deg, var(--surface2), var(--surface3));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+}
+.blog-content { padding: 24px; }
+.blog-cat {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--teal-light);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.blog-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+.blog-excerpt { font-size: 14px; color: var(--text-muted); line-height: 1.6; margin-bottom: 16px; }
+.blog-meta { font-size: 12px; color: var(--text-muted); display: flex; gap: 12px; }
+
+/* ─── WAITLIST ───────────────────────────────────────────── */
+.waitlist-hero {
+  padding: 80px 24px;
+  background: var(--midnight);
+  text-align: center;
+}
+.waitlist-form-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius-xl);
+  padding: 48px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.success-state {
+  text-align: center;
+  padding: 48px 24px;
+  display: none;
+}
+.success-icon {
+  width: 64px; height: 64px;
+  background: rgba(34,197,94,0.15);
+  border: 2px solid rgba(34,197,94,0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin: 0 auto 20px;
+}
+
+/* ─── CONTACT ────────────────────────────────────────────── */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 64px;
+  align-items: start;
+}
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+.ci-icon {
+  width: 42px; height: 42px;
+  background: rgba(37,99,235,0.1);
+  border: 1px solid rgba(37,99,235,0.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.ci-label { font-size: 12px; color: var(--text-muted); margin-bottom: 4px; font-family: var(--font-mono); }
+.ci-val { font-size: 15px; color: var(--text-primary); }
+.social-links { display: flex; gap: 12px; margin-top: 24px; }
+.social-link {
+  width: 40px; height: 40px;
+  background: var(--surface);
+  border: 1px solid var(--border2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.social-link:hover { background: rgba(37,99,235,0.1); border-color: rgba(37,99,235,0.4); }
+
+/* ─── PARTNERSHIP ────────────────────────────────────────── */
+.partner-types {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.partner-type-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 32px 28px;
+  transition: all 0.25s;
+}
+.partner-type-card:hover { border-color: var(--border2); transform: translateY(-3px); }
+.pt-icon {
+  font-size: 36px;
+  margin-bottom: 16px;
+  display: block;
+}
+.pt-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.pt-desc { font-size: 14px; color: var(--text-muted); line-height: 1.65; }
+.partner-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ─── FOOTER ─────────────────────────────────────────────── */
+#footer {
+  background: var(--midnight);
+  border-top: 1px solid var(--border);
+  padding: 64px 24px 32px;
+}
+.footer-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+.footer-brand-name {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.footer-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 20px;
+  max-width: 280px;
+}
+.footer-newsletter { display: flex; gap: 8px; }
+.footer-email-input {
+  flex: 1;
+  background: var(--surface);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  color: var(--text-primary);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.footer-email-input:focus { border-color: var(--electric); }
+.footer-email-input::placeholder { color: var(--text-muted); }
+.footer-sub-btn {
+  padding: 10px 16px;
+  background: var(--gradient-primary);
+  border: none;
+  border-radius: var(--radius-md);
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: var(--font-body);
+}
+.footer-col-title {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 10px; }
+.footer-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--text-primary); }
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+  font-size: 13px;
+  color: var(--text-muted);
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.footer-legal { display: flex; gap: 20px; }
+.footer-legal a { color: var(--text-muted); text-decoration: none; }
+.footer-legal a:hover { color: var(--text-secondary); }
+
+/* ─── SECTION HEADERS ────────────────────────────────────── */
+.section-header { margin-bottom: 56px; }
+.section-header.centered { text-align: center; }
+.section-header.centered .subheadline { margin-left: auto; margin-right: auto; }
+
+/* ─── DIVIDER ────────────────────────────────────────────── */
+.divider {
+  height: 1px;
+  background: var(--border);
+  margin: 64px 0;
+}
+
+/* ─── LEARN ITEMS ────────────────────────────────────────── */
+.learn-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.learn-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  transition: border-color 0.2s;
+}
+.learn-item:hover { border-color: var(--border2); }
+.learn-check {
+  width: 24px; height: 24px;
+  background: var(--gradient-primary);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.learn-text { font-size: 14px; color: var(--text-secondary); line-height: 1.5; }
+.learn-text strong { color: var(--white); font-weight: 500; display: block; margin-bottom: 2px; }
+
+/* ─── CAREER OUTCOMES ────────────────────────────────────── */
+.outcome-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.outcome-pill {
+  padding: 10px 18px;
+  background: var(--surface);
+  border: 1px solid var(--border2);
+  border-radius: 100px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.outcome-pill-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  flex-shrink: 0;
+}
+
+/* ─── WHO ITS FOR ────────────────────────────────────────── */
+.who-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.who-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 20px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+.who-bullet {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--teal-light);
+  margin-top: 8px;
+  flex-shrink: 0;
+}
+
+/* ─── FEATURE LIST ───────────────────────────────────────── */
+.feature-list { list-style: none; }
+.feature-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+.feature-list li:last-child { border-bottom: none; }
+.fl-icon { color: var(--teal-light); flex-shrink: 0; font-size: 14px; margin-top: 1px; }
+
+/* Mobile nav */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  inset: 68px 0 0;
+  background: var(--midnight);
+  z-index: 999;
+  padding: 24px;
+  overflow-y: auto;
+  flex-direction: column;
+  gap: 4px;
+  border-top: 1px solid var(--border);
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 14px 12px;
+  border-bottom: 1px solid var(--border);
+  transition: color 0.2s;
+}
+.mobile-menu a:hover { color: var(--white); }
+
+/* ─── RESPONSIVE ─────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .footer-grid { grid-template-columns: 1fr 1fr 1fr; }
+  .footer-grid > :first-child { grid-column: span 3; }
+}
+
+@media (max-width: 768px) {
+  .nav-links, .nav-cta { display: none; }
+  .nav-hamburger { display: block; }
+
+  .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+  .hero-visual { display: none; }
+  .hero-headline { font-size: 40px; }
+
+  .steps-grid { grid-template-columns: 1fr 1fr; }
+  .program-cards { grid-template-columns: 1fr; }
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .learn-grid { grid-template-columns: 1fr 1fr; }
+  .values-grid { grid-template-columns: 1fr 1fr; }
+  .pain-points { grid-template-columns: 1fr; }
+  .partner-types { grid-template-columns: 1fr; }
+  .course-hero-inner { grid-template-columns: 1fr; }
+  .course-summary-card { position: static; }
+  .blog-featured { grid-template-columns: 1fr; }
+  .blog-featured-img { min-height: 200px; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .solution-block { grid-template-columns: 1fr; }
+  .employers-teaser { grid-template-columns: 1fr; padding: 40px 28px; gap: 32px; }
+  .cta-section { padding: 48px 24px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid > :first-child { grid-column: span 2; }
+  .who-grid { grid-template-columns: 1fr; }
+  .form-grid { grid-template-columns: 1fr; }
+  .strip-item { border-right: none; border-bottom: 1px solid var(--border); width: 100%; }
+
+  .section { padding: 64px 0; }
+}
+
+@media (max-width: 480px) {
+  .steps-grid { grid-template-columns: 1fr; }
+  .learn-grid { grid-template-columns: 1fr; }
+  .values-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-grid > :first-child { grid-column: span 1; }
+  .hero-stats { flex-direction: column; gap: 16px; }
+  .hero-actions { flex-direction: column; }
+  .partner-actions { flex-direction: column; align-items: stretch; }
+  .waitlist-form-wrap { padding: 28px 20px; }
+}
+
+/* Page transition */
+.page { animation: fadeIn 0.3s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Scroll reveal */
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* Inline code */
+code {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  background: var(--surface2);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: var(--teal-light);
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" onclick="navigate('home')">
+      <div class="nav-logo-mark">C</div>
+      Cogniklab
+    </a>
+    <ul class="nav-links">
+      <li><a href="#" onclick="navigate('home')">Home</a></li>
+      <li><a href="#" onclick="navigate('programs')">Programs</a></li>
+      <li><a href="#" onclick="navigate('employers')">For Employers</a></li>
+      <li><a href="#" onclick="navigate('partnership')">Partnerships</a></li>
+      <li><a href="#" onclick="navigate('about')">About</a></li>
+      <li><a href="#" onclick="navigate('blog')">Blog</a></li>
+      <li><a href="#" onclick="navigate('contact')">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#" class="btn-nav" onclick="navigate('waitlist')">Join Cohort</a>
+    </div>
+    <button class="nav-hamburger" onclick="toggleMobileMenu()" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#" onclick="navigate('home');toggleMobileMenu()">Home</a>
+  <a href="#" onclick="navigate('programs');toggleMobileMenu()">Programs</a>
+  <a href="#" onclick="navigate('employers');toggleMobileMenu()">For Employers</a>
+  <a href="#" onclick="navigate('partnership');toggleMobileMenu()">Partnerships</a>
+  <a href="#" onclick="navigate('about');toggleMobileMenu()">About</a>
+  <a href="#" onclick="navigate('blog');toggleMobileMenu()">Blog</a>
+  <a href="#" onclick="navigate('contact');toggleMobileMenu()">Contact</a>
+  <a href="#" onclick="navigate('waitlist');toggleMobileMenu()" style="color: var(--electric-light); font-weight: 500; margin-top: 8px;">→ Join Next Cohort</a>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     PAGE: HOMEPAGE
+═══════════════════════════════════════════════════════════ -->
+<div class="page active" id="page-home">
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="label">Cohort-Based Applied Learning</div>
+        <h1 class="hero-headline">
+          From Learning<br>to <span class="text-gradient">Trusted</span><br>Talent
+        </h1>
+        <p class="hero-sub">Cogniklab builds job-ready tech talent and the systems that make that talent easier to trust, hire, and deploy.</p>
+        <p class="hero-body">We equip beginners and early career professionals with practical, real-world skills in data, business intelligence, AI, and emerging tech. Through applied learning, projects, and measurable proof of skill, we prepare talent to create real impact.</p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary" onclick="navigate('waitlist')">Join a Cohort</a>
+          <a href="#" class="btn btn-secondary" onclick="navigate('programs')">Explore Programs</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num text-gradient">10 wks</div>
+            <div class="hero-stat-label">Intensive Program</div>
+          </div>
+          <div>
+            <div class="hero-stat-num text-gradient">₦75k</div>
+            <div class="hero-stat-label">Starting Investment</div>
+          </div>
+          <div>
+            <div class="hero-stat-num text-gradient">100%</div>
+            <div class="hero-stat-label">Project-Based</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="dashboard-mock" style="position:relative;">
+          <div class="hero-badge hb1">● Live Dashboard Deployed</div>
+          <div class="hero-badge hb2">⚡ SQL Query Running</div>
+          <div class="hero-badge hb3">📊 Portfolio Ready</div>
+          <div class="dash-topbar">
+            <div class="dash-dot d1"></div>
+            <div class="dash-dot d2"></div>
+            <div class="dash-dot d3"></div>
+            <span class="dash-title">cogniklab_analytics_dashboard.pbix</span>
+          </div>
+          <div class="dash-metrics">
+            <div class="dash-metric">
+              <div class="dm-val blue">2,847</div>
+              <div class="dm-label">Total Records</div>
+            </div>
+            <div class="dash-metric">
+              <div class="dm-val teal">94.2%</div>
+              <div class="dm-label">Data Quality</div>
+            </div>
+            <div class="dash-metric">
+              <div class="dm-val green">↑18%</div>
+              <div class="dm-label">YoY Growth</div>
+            </div>
+          </div>
+          <div class="dash-chart-area">
+            <div class="chart-bar" style="height:45%; animation-delay:0.1s"></div>
+            <div class="chart-bar" style="height:65%; animation-delay:0.2s; background: linear-gradient(180deg, var(--teal) 0%, rgba(13,148,136,0.3) 100%)"></div>
+            <div class="chart-bar" style="height:80%; animation-delay:0.3s"></div>
+            <div class="chart-bar" style="height:58%; animation-delay:0.4s; background: linear-gradient(180deg, var(--teal) 0%, rgba(13,148,136,0.3) 100%)"></div>
+            <div class="chart-bar" style="height:90%; animation-delay:0.5s"></div>
+            <div class="chart-bar" style="height:72%; animation-delay:0.6s; background: linear-gradient(180deg, var(--teal) 0%, rgba(13,148,136,0.3) 100%)"></div>
+            <div class="chart-bar" style="height:85%; animation-delay:0.7s"></div>
+            <div class="chart-bar" style="height:68%; animation-delay:0.8s; background: linear-gradient(180deg, var(--teal) 0%, rgba(13,148,136,0.3) 100%)"></div>
+          </div>
+          <div class="dash-row">
+            <div class="dash-mini">
+              <div class="dm-row"><span class="dm-name">Excel</span><span style="font-size:11px;color:var(--electric-light);font-family:var(--font-mono)">92%</span></div>
+              <div class="dm-bar-wrap"><div class="dm-bar-fill" style="width:92%"></div></div>
+              <div class="dm-row" style="margin-top:10px"><span class="dm-name">SQL</span><span style="font-size:11px;color:var(--teal-light);font-family:var(--font-mono)">88%</span></div>
+              <div class="dm-bar-wrap"><div class="dm-bar-fill" style="width:88%; background:var(--teal)"></div></div>
+            </div>
+            <div class="dash-mini">
+              <div class="dm-row"><span class="dm-name">Python</span><span style="font-size:11px;color:var(--electric-light);font-family:var(--font-mono)">76%</span></div>
+              <div class="dm-bar-wrap"><div class="dm-bar-fill" style="width:76%"></div></div>
+              <div class="dm-row" style="margin-top:10px"><span class="dm-name">Power BI</span><span style="font-size:11px;color:var(--teal-light);font-family:var(--font-mono)">95%</span></div>
+              <div class="dm-bar-wrap"><div class="dm-bar-fill" style="width:95%; background:var(--teal)"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDIBILITY STRIP -->
+  <div id="credibility-strip">
+    <div class="strip-inner">
+      <div class="strip-item"><div class="strip-icon">🎯</div>Applied Learning</div>
+      <div class="strip-item"><div class="strip-icon">🛠️</div>Real Projects</div>
+      <div class="strip-item"><div class="strip-icon">✅</div>Job-Ready Skills</div>
+      <div class="strip-item"><div class="strip-icon">📁</div>Portfolio-Based</div>
+      <div class="strip-item"><div class="strip-icon">🤝</div>Employer Relevant</div>
+    </div>
+  </div>
+
+  <!-- ABOUT PREVIEW -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="grid-2" style="align-items:center;gap:80px">
+        <div>
+          <div class="label">About Cogniklab</div>
+          <h2 class="headline headline-lg" style="margin-bottom:24px">Built for the future of work in Africa and beyond</h2>
+          <p class="subheadline" style="max-width:100%;margin-bottom:24px">Cogniklab is more than a training program. It is an emerging talent infrastructure company, purpose-built to close the gap between learning and real employment.</p>
+          <p style="font-size:15px;color:var(--text-muted);line-height:1.75;margin-bottom:32px">We start with cohort-based programs and evolve into a trusted system for discovering, verifying, and deploying job-ready talent. Every learner we train becomes a signal the market can trust.</p>
+          <a href="#" class="btn btn-secondary" onclick="navigate('about')">Our Story & Mission</a>
+        </div>
+        <div>
+          <div class="card" style="margin-bottom:16px">
+            <div class="label">Our Mission</div>
+            <p style="font-size:15px;color:var(--text-secondary);line-height:1.7">Equip the next generation of African tech professionals with practical, employer-relevant skills and systems that prove their readiness.</p>
+          </div>
+          <div class="card" style="margin-bottom:16px">
+            <div class="label">Our Vision</div>
+            <p style="font-size:15px;color:var(--text-secondary);line-height:1.7">Become the most trusted source of job-ready tech talent for employers across Africa and emerging markets globally.</p>
+          </div>
+          <div class="card">
+            <div class="label">Our Edge</div>
+            <p style="font-size:15px;color:var(--text-secondary);line-height:1.7">We don't just teach — we build proof. Every learner graduates with a portfolio, completed projects, and verified capabilities that employers can trust.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="label" style="justify-content:center">The Cogniklab Method</div>
+        <h2 class="headline headline-lg">How Cogniklab Works</h2>
+      </div>
+      <div class="steps-grid reveal">
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <div class="step-icon">📚</div>
+          <div class="step-title">Learn practical skills</div>
+          <p class="step-desc">Structured, real-world curriculum built around what employers actually need — Excel, SQL, Python, Power BI, and more.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <div class="step-icon">⚙️</div>
+          <div class="step-title">Build real projects</div>
+          <p class="step-desc">Apply every skill to real datasets, business problems, and workflows. No toy exercises — real deliverables you can show.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <div class="step-icon">🏆</div>
+          <div class="step-title">Prove capability</div>
+          <p class="step-desc">Your capstone project, portfolio, and mock presentations give employers measurable, verifiable evidence of your ability.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">04</div>
+          <div class="step-icon">🚀</div>
+          <div class="step-title">Get discovered & deployed</div>
+          <p class="step-desc">Cogniklab surfaces your profile to our employer and partner network. Talent infrastructure that works for you even after graduation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROGRAMS -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="label">Current Programs</div>
+        <h2 class="headline headline-lg" style="margin-bottom:16px">Featured Programs</h2>
+        <p class="subheadline">Cohort-based, project-driven, employer-aligned. Built for real outcomes.</p>
+      </div>
+      <div class="program-cards">
+        <div class="program-card featured">
+          <div class="program-card-header">
+            <div class="program-badge"><span class="badge badge-blue">● Enrolling Now</span></div>
+            <div class="program-title">Data & Business Intelligence Analyst</div>
+            <p class="program-desc">Master the full data stack — from Excel to Python — and build dashboards, reports, and insights that drive business decisions.</p>
+          </div>
+          <div class="program-card-body">
+            <div class="program-meta">
+              <div class="pm-item"><span class="pm-icon">📅</span> 10 Weeks</div>
+              <div class="pm-item"><span class="pm-icon">🎯</span> Beginner-Friendly</div>
+              <div class="pm-item"><span class="pm-icon">💻</span> Live + Project</div>
+            </div>
+            <div class="program-tools">
+              <span class="tool-tag">Excel</span>
+              <span class="tool-tag">SQL</span>
+              <span class="tool-tag">Python</span>
+              <span class="tool-tag">Power BI</span>
+              <span class="tool-tag">Data Storytelling</span>
+            </div>
+            <div class="program-outcome"><strong>Outcome:</strong> Job-ready data analyst with a complete portfolio of real projects.</div>
+            <a href="#" class="btn btn-primary" onclick="navigate('course-da')" style="width:100%;justify-content:center">View Program →</a>
+          </div>
+        </div>
+        <div class="program-card">
+          <div class="program-card-header">
+            <div class="program-badge"><span class="badge badge-amber">Coming Soon</span></div>
+            <div class="program-title">AI Operations & Prompt Engineering Associate</div>
+            <p class="program-desc">Learn to design, deploy, and manage AI workflows using prompt systems, automation tools, and real business use cases.</p>
+          </div>
+          <div class="program-card-body">
+            <div class="program-meta">
+              <div class="pm-item"><span class="pm-icon">📅</span> 8 Weeks</div>
+              <div class="pm-item"><span class="pm-icon">🎯</span> Beginner-Friendly</div>
+              <div class="pm-item"><span class="pm-icon">💻</span> Live + Project</div>
+            </div>
+            <div class="program-tools">
+              <span class="tool-tag">Prompt Systems</span>
+              <span class="tool-tag">AI Workflows</span>
+              <span class="tool-tag">LLM Tools</span>
+              <span class="tool-tag">AI Ops</span>
+            </div>
+            <div class="program-outcome"><strong>Outcome:</strong> Certified AI Operations practitioner ready for modern AI-enabled teams.</div>
+            <a href="#" class="btn btn-secondary" onclick="navigate('waitlist')" style="width:100%;justify-content:center">Join Waitlist</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOR EMPLOYERS TEASER -->
+  <section class="section">
+    <div class="container">
+      <div class="employers-teaser">
+        <div>
+          <div class="label">For Employers</div>
+          <h2 class="headline headline-md" style="margin-bottom:20px">We don't just train talent.<br>We make talent you can trust.</h2>
+          <p style="font-size:15px;color:var(--text-secondary);line-height:1.75;margin-bottom:32px">Traditional hiring for junior tech roles is expensive and unreliable. You interview dozens, hire a few, and still aren't sure they're ready. Cogniklab changes that equation — every candidate from our programs arrives with verified skills, completed projects, and demonstrated readiness you can actually evaluate.</p>
+          <div class="feature-list">
+            <li><span class="fl-icon">✓</span>Project-tested, not just classroom-trained</li>
+            <li><span class="fl-icon">✓</span>Standardized curriculum aligned to real job requirements</li>
+            <li><span class="fl-icon">✓</span>Employer-reviewed portfolio for every graduate</li>
+            <li><span class="fl-icon">✓</span>Dedicated talent partnership programs</li>
+          </div>
+        </div>
+        <div>
+          <div class="card" style="margin-bottom:16px;border-color:rgba(37,99,235,0.2)">
+            <div class="label">Trusted Signal</div>
+            <h3 class="headline headline-sm" style="margin-bottom:12px">Every Cogniklab graduate is a verified talent signal</h3>
+            <p style="font-size:14px;color:var(--text-muted);line-height:1.65;margin-bottom:20px">Skills tested through real deliverables. Projects reviewed against industry standards. Capabilities proven through structured assessment.</p>
+            <a href="#" class="btn btn-primary" onclick="navigate('employers')">Hire from Cogniklab →</a>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+            <div class="card" style="padding:18px">
+              <div style="font-size:24px;margin-bottom:4px">📊</div>
+              <div style="font-size:13px;color:var(--text-muted)">Portfolio-based assessment</div>
+            </div>
+            <div class="card" style="padding:18px">
+              <div style="font-size:24px;margin-bottom:4px">🎯</div>
+              <div style="font-size:13px;color:var(--text-muted)">Role-aligned curriculum</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="label" style="justify-content:center">Social Proof</div>
+        <h2 class="headline headline-md">What our community says</h2>
+      </div>
+      <div class="grid-3">
+        <div class="testimonial-card">
+          <p class="testimonial-quote">Cogniklab changed my relationship with data. Within 8 weeks I went from knowing nothing about SQL to building dashboards for real business problems. The applied approach is unlike anything else.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">AO</div>
+            <div>
+              <div class="testi-name">Amaka Okonkwo</div>
+              <div class="testi-role">Data Analyst, Lagos</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-quote">The quality of talent coming from Cogniklab is noticeably different. These are people who have already solved real problems — not just people who attended classes.</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:linear-gradient(135deg,var(--teal),var(--teal-light))">TF</div>
+            <div>
+              <div class="testi-name">Tunde Fashola</div>
+              <div class="testi-role">Head of Data, Fintech Startup</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-quote">I came in with zero technical background. By the end, I had a full portfolio, a job offer, and the confidence to grow in any data role. Cogniklab's systems actually work.</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:linear-gradient(135deg,#6366F1,#8B5CF6)">CI</div>
+            <div>
+              <div class="testi-name">Chidera Ike</div>
+              <div class="testi-role">Business Intelligence Analyst</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-section">
+        <div class="label" style="justify-content:center">Ready to Start?</div>
+        <h2 class="headline headline-lg" style="margin-bottom:20px;max-width:640px;margin-left:auto;margin-right:auto">Ready to build real skills and become job-ready?</h2>
+        <p style="font-size:17px;color:var(--text-secondary);margin-bottom:40px;max-width:500px;margin-left:auto;margin-right:auto">The next Cogniklab cohort is forming. Seats are limited and go to those who show up first.</p>
+        <a href="#" class="btn btn-primary" onclick="navigate('waitlist')" style="font-size:17px;padding:16px 40px">Join the Next Cohort →</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     PAGE: PROGRAMS
+═══════════════════════════════════════════════════════════ -->
+<div class="page" id="page-programs">
+  <section style="padding:80px 24px 40px;background:var(--midnight);position:relative;">
+    <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%, rgba(37,99,235,0.1) 0%, transparent 60%);"></div>
+    <div class="container-sm" style="position:relative;z-index:1;text-align:center;">
+      <div class="label" style="justify-content:center">Cogniklab Programs</div>
+      <h1 class="headline headline-lg" style="margin-bottom:20px">Programs Built for Real Careers</h1>
+      <p class="subheadline" style="margin:0 auto;text-align:center">Every Cogniklab program is designed from the employer's perspective — built around the tools, workflows, and deliverables that actually matter in modern tech jobs.</p>
+    </div>
+  </section>
+  <section class="section section-alt">
+    <div class="container">
+      <div class="program-cards" style="gap:32px">
+        <!-- Program 1 -->
+        <div class="program-card featured">
+          <div class="program-card-header">
+            <div class="program-badge"><span class="badge badge-blue">● Enrolling Now</span></div>
+            <div class="program-title">Data & Business Intelligence Analyst</div>
+            <p class="program-desc">A complete, end-to-end program covering the full data analyst toolkit. From foundations to capstone portfolio. Built for beginners who want to move fast.</p>
+          </div>
+          <div class="program-card-body">
+            <div class="program-meta">
+              <div class="pm-item"><span class="pm-icon">📅</span> 10 Weeks</div>
+              <div class="pm-item"><span class="pm-icon">🎓</span> Beginner-Friendly</div>
+              <div class="pm-item"><span class="pm-icon">💻</span> Live + Async</div>
+              <div class="pm-item"><span class="pm-icon">👥</span> Cohort-Based</div>
+            </div>
+            <div class="program-tools">
+              <span class="tool-tag">Excel</span><span class="tool-tag">SQL</span><span class="tool-tag">Python</span><span class="tool-tag">Power BI</span><span class="tool-tag">Data Storytelling</span><span class="tool-tag">Pandas</span>
+            </div>
+            <div class="program-outcome"><strong>Outcome:</strong> Job-ready Data & BI Analyst with a complete verified project portfolio and employer-relevant skills.</div>
+            <a href="#" class="btn btn-primary" onclick="navigate('course-da')" style="width:100%;justify-content:center">View Full Program →</a>
+          </div>
+        </div>
+        <!-- Program 2 -->
+        <div class="program-card">
+          <div class="program-card-header">
+            <div class="program-badge"><span class="badge badge-amber">Coming Soon</span></div>
+            <div class="program-title">AI Operations & Prompt Engineering Associate</div>
+            <p class="program-desc">The next frontier in workplace AI literacy. Learn to deploy, manage, and optimize AI systems for real business workflows across industries.</p>
+          </div>
+          <div class="program-card-body">
+            <div class="program-meta">
+              <div class="pm-item"><span class="pm-icon">📅</span> 8 Weeks</div>
+              <div class="pm-item"><span class="pm-icon">🎓</span> Beginner-Friendly</div>
+              <div class="pm-item"><span class="pm-icon">💻</span> Live + Project</div>
+              <div class="pm-item"><span class="pm-icon">👥</span> Cohort-Based</div>
+            </div>
+            <div class="program-tools">
+              <span class="tool-tag">Prompt Engineering</span><span class="tool-tag">LLM APIs</span><span class="tool-tag">AI Workflows</span><span class="tool-tag">Automation</span>
+            </div>
+            <div class="program-outcome"><strong>Outcome:</strong> Certified AI Operations practitioner capable of deploying and managing AI tools in business environments.</div>
+            <a href="#" class="btn btn-secondary" onclick="navigate('waitlist')" style="width:100%;justify-content:center">Join Waitlist</a>
+          </div>
+        </div>
+      </div>
+      <!-- Future programs note -->
+      <div class="card" style="margin-top:40px;padding:40px;text-align:center;background:var(--surface2);">
+        <div style="font-size:32px;margin-bottom:12px">🔭</div>
+        <h3 class="headline headline-sm" style="margin-bottom:12px">More programs are in development</h3>
+        <p style="font-size:15px;color:var(--text-muted);margin-bottom:24px;max-width:480px;margin-left:auto;margin-right:auto">We are building programs in cloud operations, product analytics, and data engineering. Join our community to get early access and updates.</p>
+        <a href="#" class="btn btn-secondary" onclick="navigate('waitlist')">Get Notified Early</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     PAGE: COURSE — DATA & BI ANALYST
+═══════════════════════════════════════════════════════════ -->
+<div class="page" id="page-course-da">
+  <section class="course-hero">
+    <div class="course-hero-inner">
+      <div>
+        <div class="label">Data & BI Program · Cohort 01</div>
+        <h1 class="headline headline-lg" style="margin-bottom:20px">Become a Job-Ready Data & Business Intelligence Analyst</h1>
+        <p class="subheadline" style="margin-bottom:32px">Master Excel, SQL, Python, Power BI, and data storytelling through hands-on projects, practical workflows, and portfolio building. Graduate with skills employers can verify.</p>
+        <div class="outcome-pills" style="margin-bottom:32px">
+          <div class="outcome-pill"><div class="outcome-pill-dot"></div>Data Analyst</div>
+          <div class="outcome-pill"><div class="outcome-pill-dot"></div>BI Analyst</div>
+          <div class="outcome-pill"><div class="outcome-pill-dot"></div>Reporting Analyst</div>
+          <div class="outcome-pill"><div class="outcome-pill-dot"></div>Data Associate</div>
+        </div>
+        <div style="display:flex;gap:20px;flex-wrap:wrap">
+          <div style="display:flex;align-items:center;gap:8px;font-size:14px;color:var(--text-secondary)">⭐⭐⭐⭐⭐ <span>4.9 / 5.0</span></div>
+          <div style="font-size:14px;color:var(--text-muted)">•</div>
+          <div style="font-size:14px;color:var(--text-secondary)">Cohort-based · Live sessions · 10 weeks</div>
+        </div>
+      </div>
+      <!-- Sticky card -->
+      <div>
+        <div class="course-summary-card">
+          <div class="price-block">
+            <div class="price-original">₦250,000</div>
+            <div class="price-discounted">₦75,000</div>
+            <div style="display:flex;align-items:center;gap:10px;margin-top:8px">
+              <span class="price-badge">70% OFF</span>
+              <span style="font-size:13px;color:var(--text-muted)">Founding cohort price</span>
+            </div>
+          </div>
+          <div class="course-meta-grid">
+            <div class="cmg-item"><div class="cmg-label">Duration</div><div class="cmg-val">10 Weeks</div></div>
+            <div class="cmg-item"><div class="cmg-label">Format</div><div class="cmg-val">Cohort-Based</div></div>
+            <div class="cmg-item"><div class="cmg-label">Level</div><div class="cmg-val">Beginner+</div></div>
+            <div class="cmg-item"><div class="cmg-label">Mode</div><div class="cmg-val">Live & Project</div></div>
+          </div>
+          <a href="#" class="btn btn-primary" onclick="navigate('waitlist')" style="width:100%;justify-content:center;margin-bottom:12px;font-size:16px;padding:16px">Enroll in Cohort →</a>
+          <a href="#" class="btn btn-secondary" onclick="navigate('contact')" style="width:100%;justify-content:center;font-size:14px">Ask a question</a>
+          <div style="margin-top:20px;padding-top:20px;border-top:1px solid var(--border);">
+            <div style="font-size:13px;color:var(--text-muted);margin-bottom:10px;font-family:var(--font-mono)">What's included:</div>
+            <ul class="feature-list">
+              <li><span class="fl-icon">✓</span>10 weeks of live instruction</li>
+              <li><span class="fl-icon">✓</span>6 real-world projects</li>
+              <li><span class="fl-icon">✓</span>Capstone + portfolio build</li>
+              <li><span class="fl-icon">✓</span>Mock presentation & job prep</li>
+              <li><span class="fl-icon">✓</span>Certificate of completion</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU'LL LEARN -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="label">Skills & Outcomes</div>
+        <h2 class="headline headline-md" style="margin-bottom:16px">What You Will Learn</h2>
+        <p class="subheadline">Every skill is taught in context, applied to real data, and delivered as something you can show an employer.</p>
+      </div>
+      <div class="learn-grid">
+        <div class="learn-item"><div class="learn-check">✓</div><div class="learn-text"><strong>Excel for Analysis & Reporting</strong>Advanced formulas, pivot tables, data cleaning, and report automation for business use.</div></div>
+        <div class="learn-item"><div class="learn-check">✓</div><div class="learn-text"><strong>SQL for Business Insights</strong>Write queries that extract meaning from databases. Joins, aggregations, subqueries, and business-level analysis.</div></div>
+        <div class="learn-item"><div class="learn-check">✓</div><div class="learn-text"><strong>Python for Data Analysis</strong>Pandas, NumPy, data cleaning, exploration, and working with real messy datasets.</div></div>
+        <div class="learn-item"><div class="learn-check">✓</div><div class="learn-text"><strong>Power BI Dashboards</strong>Build dynamic, interactive dashboards from scratch. DAX, data modeling, and visual storytelling.</div></div>
+        <div class="learn-item"><div class="learn-check">✓</div><div class="learn-text"><strong>Data Storytelling</strong>Communicate findings clearly to non-technical stakeholders. Reports, presentations, and executive summaries.</div></div>
+        <div class="learn-item"><div class="learn-check">✓</div><div class="learn-text"><strong>Capstone & Portfolio</strong>Complete a real-world capstone project, build a public portfolio, and present to a mock panel of reviewers.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURRICULUM -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="label">10-Week Curriculum</div>
+        <h2 class="headline headline-md" style="margin-bottom:16px">What You'll Cover, Week by Week</h2>
+        <p style="color:var(--text-muted);max-width:560px">Click any week to see what's covered. Every week builds on the last — from foundation to full stack.</p>
+      </div>
+      <div id="curriculum">
+        <!-- Weeks populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CAREER OUTCOMES -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="grid-2" style="align-items:center;gap:64px">
+        <div>
+          <div class="label">After Graduation</div>
+          <h2 class="headline headline-md" style="margin-bottom:20px">Career Outcomes</h2>
+          <p style="font-size:15px;color:var(--text-secondary);line-height:1.75;margin-bottom:32px">Cogniklab graduates are ready for real data roles. Not someday — from day one. The roles below represent the positions our curriculum directly prepares you for.</p>
+          <div class="outcome-pills">
+            <div class="outcome-pill"><div class="outcome-pill-dot"></div>Data Analyst</div>
+            <div class="outcome-pill"><div class="outcome-pill-dot"></div>Business Intelligence Analyst</div>
+            <div class="outcome-pill"><div class="outcome-pill-dot"></div>Reporting Analyst</div>
+            <div class="outcome-pill"><div class="outcome-pill-dot"></div>Data Operations Specialist</div>
+            <div class="outcome-pill"><div class="outcome-pill-dot"></div>Junior Data Engineer</div>
+            <div class="outcome-pill"><div class="outcome-pill-dot"></div>Analytics Consultant</div>
+            <div class="outcome-pill"><div class="outcome-pill-dot"></div>Business Analyst (Tech)</div>
+            <div class="outcome-pill"><div class="outcome-pill-dot"></div>Freelance Data Analyst</div>
+          </div>
+        </div>
+        <div>
+          <div class="label">Who It's For</div>
+          <h3 class="headline headline-sm" style="margin-bottom:20px">Is this program right for you?</h3>
+          <div class="who-grid">
+            <div class="who-item"><div class="who-bullet"></div><span style="font-size:14px;color:var(--text-secondary)">Complete beginners with no technical background</span></div>
+            <div class="who-item"><div class="who-bullet"></div><span style="font-size:14px;color:var(--text-secondary)">Recent graduates looking to enter tech</span></div>
+            <div class="who-item"><div class="who-bullet"></div><span style="font-size:14px;color:var(--text-secondary)">Professionals switching into data careers</span></div>
+            <div class="who-item"><div class="who-bullet"></div><span style="font-size:14px;color:var(--text-secondary)">Analysts wanting to strengthen their stack</span></div>
+            <div class="who-item"><div class="who-bullet"></div><span style="font-size:14px;color:var(--text-secondary)">Entrepreneurs who want to use data better</span></div>
+            <div class="who-item"><div class="who-bullet"></div><span style="font-size:14px;color:var(--text-secondary)">Anyone who wants a job-ready portfolio fast</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY THIS PROGRAM -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="label" style="justify-content:center">Why Cogniklab</div>
+        <h2 class="headline headline-md">Why This Program is Different</h2>
+      </div>
+      <div class="grid-3">
+        <div class="value-card">
+          <span class="value-icon">🎯</span>
+          <div class="value-title">Built around jobs, not syllabi</div>
+          <p class="value-desc">Every skill, project, and tool in this program was chosen because employers ask for it in job descriptions. Nothing is filler.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">🛠️</span>
+          <div class="value-title">Learn by doing, always</div>
+          <p class="value-desc">Each week delivers a mini project. By week 10 you have 6+ completed deliverables and a capstone that shows employers what you can do.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">🤝</span>
+          <div class="value-title">Cohort energy, not solo study</div>
+          <p class="value-desc">You learn alongside peers, get peer review, live sessions, and a structured environment that keeps you accountable and growing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt">
+    <div class="container container-sm">
+      <div class="section-header centered">
+        <div class="label" style="justify-content:center">FAQ</div>
+        <h2 class="headline headline-md">Frequently Asked Questions</h2>
+      </div>
+      <div id="faqList"></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-section">
+        <div class="label" style="justify-content:center">Enroll Today</div>
+        <h2 class="headline headline-lg" style="margin-bottom:16px;max-width:580px;margin-left:auto;margin-right:auto">Seats for the next cohort are limited</h2>
+        <p style="font-size:17px;color:var(--text-secondary);margin-bottom:12px">Original price: <span style="text-decoration:line-through;color:var(--text-muted)">₦250,000</span></p>
+        <p style="font-family:var(--font-display);font-size:40px;font-weight:800;color:var(--white);margin-bottom:8px">₦75,000</p>
+        <p style="font-size:14px;color:var(--text-muted);margin-bottom:32px">Founding cohort pricing — 70% off. Limited time.</p>
+        <a href="#" class="btn btn-primary" onclick="navigate('waitlist')" style="font-size:17px;padding:16px 40px">Secure Your Seat →</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     PAGE: ABOUT
+═══════════════════════════════════════════════════════════ -->
+<div class="page" id="page-about">
+  <section style="padding:80px 24px;background:var(--midnight);position:relative;overflow:hidden;">
+    <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 30% 60%, rgba(13,148,136,0.1) 0%, transparent 60%), radial-gradient(ellipse at 70% 20%, rgba(37,99,235,0.08) 0%, transparent 60%);"></div>
+    <div class="container-sm" style="position:relative;z-index:1;">
+      <div class="label">Our Story</div>
+      <h1 class="headline headline-xl" style="margin-bottom:24px">We're building the talent infrastructure Africa needs</h1>
+      <p class="subheadline">Cogniklab is not just a training program. It is a long-term infrastructure play — a system for discovering, verifying, and deploying job-ready tech talent in emerging markets.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="grid-2" style="gap:80px;align-items:center">
+        <div>
+          <div class="label">Our Mission</div>
+          <h2 class="headline headline-md" style="margin-bottom:20px">Equip talent. Verify capability. Enable opportunity.</h2>
+          <p style="font-size:15px;color:var(--text-secondary);line-height:1.8;margin-bottom:20px">Cogniklab's mission is clear: equip the next generation of African tech professionals with practical, employer-relevant skills and the systems that prove their readiness. Not promise. Proof.</p>
+          <p style="font-size:15px;color:var(--text-muted);line-height:1.8">We begin with cohort-based programs in data, BI, and AI. But the vision is larger — to become the most trusted source of verified, job-ready tech talent for employers across Africa and beyond.</p>
+        </div>
+        <div>
+          <div class="label">Our Vision</div>
+          <h2 class="headline headline-md" style="margin-bottom:20px">A talent infrastructure company, not just an academy.</h2>
+          <p style="font-size:15px;color:var(--text-secondary);line-height:1.8;margin-bottom:20px">By 2027, Cogniklab will operate as a full talent infrastructure layer — with verified profiles, employer pipelines, program tracks, and deployment systems that sit between talent and opportunity.</p>
+          <p style="font-size:15px;color:var(--text-muted);line-height:1.8">Today we train. Tomorrow we verify, surface, and deploy talent at scale. The infrastructure is being built now.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="label" style="justify-content:center">Philosophy</div>
+        <h2 class="headline headline-md">What We Believe</h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-card">
+          <span class="value-icon">🎯</span>
+          <div class="value-title">Applied learning is the only real learning</div>
+          <p class="value-desc">Watching lectures and taking tests doesn't build capability. Only working on real problems, with real tools, against real constraints creates real skill.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">📊</span>
+          <div class="value-title">Proof matters more than credentials</div>
+          <p class="value-desc">A certificate without a portfolio is noise. Every Cogniklab learner builds a body of work that can be evaluated, not just claimed.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">🔗</span>
+          <div class="value-title">Trust is the missing infrastructure</div>
+          <p class="value-desc">The gap between talent and opportunity isn't skill — it's trust. Employers can't verify candidates. Cogniklab builds the systems that make verification possible.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">🌍</span>
+          <div class="value-title">Africa's talent is ready. The systems aren't.</div>
+          <p class="value-desc">There is no shortage of ambitious, capable people. The shortage is in systems that connect, verify, and surface them to global opportunity. We're building those systems.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">⚡</span>
+          <div class="value-title">Speed to impact over academic depth</div>
+          <p class="value-desc">We optimize for readiness — not academic comprehensiveness. Our curriculum is tight, practical, and timed to get people into roles and impact fast.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">🤝</span>
+          <div class="value-title">Cohorts, not classrooms</div>
+          <p class="value-desc">Learning in community creates accountability, peer feedback, network effects, and the kind of resilience that solo study never can. We build cohorts, not classrooms.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="label" style="justify-content:center">Who We Serve</div>
+        <h2 class="headline headline-md">The Cogniklab Community</h2>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <div style="font-size:40px;margin-bottom:16px">🎓</div>
+          <h3 class="headline headline-sm" style="margin-bottom:12px">Learners</h3>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7">Beginners, career-switchers, and early professionals ready to build real skills in data and tech — and prove them to the world.</p>
+        </div>
+        <div class="card">
+          <div style="font-size:40px;margin-bottom:16px">🏢</div>
+          <h3 class="headline headline-sm" style="margin-bottom:12px">Employers</h3>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7">Companies and institutions looking for junior-to-mid tech talent that arrives with verified skills, real project experience, and demonstrated readiness.</p>
+        </div>
+        <div class="card">
+          <div style="font-size:40px;margin-bottom:16px">🌐</div>
+          <h3 class="headline headline-sm" style="margin-bottom:12px">Partners & Sponsors</h3>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7">Governments, development agencies, NGOs, and private sector institutions aligned with the mission of building sustainable tech talent ecosystems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     PAGE: FOR EMPLOYERS
+═══════════════════════════════════════════════════════════ -->
+<div class="page" id="page-employers">
+  <section style="padding:80px 24px;background:var(--midnight);position:relative;overflow:hidden;">
+    <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 70% 30%, rgba(37,99,235,0.12) 0%, transparent 60%);"></div>
+    <div class="container" style="position:relative;z-index:1;text-align:center;">
+      <div class="label" style="justify-content:center">For Employers & Teams</div>
+      <h1 class="headline headline-xl" style="margin-bottom:20px">Hire talent you can trust, faster</h1>
+      <p class="subheadline" style="margin:0 auto;max-width:580px">Cogniklab helps organizations access job-ready, project-tested, employer-relevant talent — without the uncertainty, the guesswork, or the wasted interviews.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="label">The Problem</div>
+        <h2 class="headline headline-md" style="margin-bottom:16px">Why hiring early tech talent is broken</h2>
+      </div>
+      <div class="pain-points">
+        <div class="pain-card">
+          <span class="pain-icon">😤</span>
+          <h3 style="font-size:17px;font-weight:600;margin-bottom:10px;color:var(--white)">Resumes lie. Interviews don't tell the whole story.</h3>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7">Junior candidates overstate abilities. You interview ten, hire two, and find out they can't deliver on day one. It's expensive and demoralizing.</p>
+        </div>
+        <div class="pain-card">
+          <span class="pain-icon">⏳</span>
+          <h3 style="font-size:17px;font-weight:600;margin-bottom:10px;color:var(--white)">Certifications don't equal capability</h3>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7">Candidates show up with certificates from online courses. But a certificate doesn't show whether they can clean a messy dataset, write a report, or build a dashboard under pressure.</p>
+        </div>
+        <div class="pain-card">
+          <span class="pain-icon">📉</span>
+          <h3 style="font-size:17px;font-weight:600;margin-bottom:10px;color:var(--white)">High dropout and onboarding cost</h3>
+          <p style="font-size:14px;color:var(--text-muted);line-height:1.7">When hires don't meet expectations, you lose salary, onboarding time, and team productivity. The cost of a bad hire at the junior level is higher than most teams realize.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="solution-block">
+        <div>
+          <div class="label">The Solution</div>
+          <h2 class="headline headline-md" style="margin-bottom:20px">How Cogniklab solves this</h2>
+          <p style="font-size:15px;color:var(--text-secondary);line-height:1.75;margin-bottom:24px">Every Cogniklab graduate has been tested against real problems, not just theoretical exercises. By the time they reach your hiring process, they already have proof.</p>
+          <ul class="feature-list">
+            <li><span class="fl-icon">✓</span><div><strong style="color:var(--white);display:block;margin-bottom:2px">Project-tested skills</strong>Graduates have completed 6+ applied projects across Excel, SQL, Python, and Power BI — with real data, real deliverables.</div></li>
+            <li><span class="fl-icon">✓</span><div><strong style="color:var(--white);display:block;margin-bottom:2px">Verified portfolio</strong>Every graduate has a public portfolio of work you can review before you even schedule an interview.</div></li>
+            <li><span class="fl-icon">✓</span><div><strong style="color:var(--white);display:block;margin-bottom:2px">Employer-aligned curriculum</strong>Our curriculum is built around what employers ask for in real job descriptions — no fluff, no filler.</div></li>
+            <li><span class="fl-icon">✓</span><div><strong style="color:var(--white);display:block;margin-bottom:2px">Capstone assessment</strong>Every cohort ends with a capstone project and mock presentation reviewed by industry practitioners.</div></li>
+          </ul>
+        </div>
+        <div>
+          <div class="card" style="margin-bottom:16px;border-color:rgba(37,99,235,0.25)">
+            <div class="label">Talent Pipeline Partnership</div>
+            <h3 class="headline headline-sm" style="margin-bottom:12px">Get first access to every graduating cohort</h3>
+            <p style="font-size:14px;color:var(--text-muted);line-height:1.65;margin-bottom:20px">Become a Cogniklab employer partner and get early access to graduating talent, priority interviews, and the ability to shape training outcomes.</p>
+            <a href="#" class="btn btn-primary" onclick="scrollToForm()">Become a Talent Partner</a>
+          </div>
+          <div class="grid-2" style="gap:12px">
+            <div class="card" style="padding:18px;border-color:rgba(13,148,136,0.2)">
+              <div style="font-size:28px;margin-bottom:6px">🎯</div>
+              <div style="font-size:13px;font-weight:500;margin-bottom:4px;color:var(--white)">Pre-screened talent</div>
+              <div style="font-size:12px;color:var(--text-muted)">Only completers with verified portfolios</div>
+            </div>
+            <div class="card" style="padding:18px;border-color:rgba(37,99,235,0.2)">
+              <div style="font-size:28px;margin-bottom:6px">⚡</div>
+              <div style="font-size:13px;font-weight:500;margin-bottom:4px;color:var(--white)">Fast pipeline</div>
+              <div style="font-size:12px;color:var(--text-muted)">New cohort every 10–12 weeks</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INQUIRY FORM -->
+  <section class="section section-alt" id="employerForm">
+    <div class="container">
+      <div class="grid-2" style="gap:64px;align-items:start">
+        <div>
+          <div class="label">Talent Partnership</div>
+          <h2 class="headline headline-md" style="margin-bottom:20px">Interested in hiring from Cogniklab?</h2>
+          <p style="font-size:15px;color:var(--text-secondary);line-height:1.75;margin-bottom:32px">Tell us a bit about your organization and what you're looking for. We'll be in touch to discuss how Cogniklab can support your hiring needs.</p>
+          <div class="card" style="padding:24px;border-color:rgba(37,99,235,0.2)">
+            <div style="font-family:var(--font-mono);font-size:11px;color:var(--teal-light);margin-bottom:12px;letter-spacing:0.1em">TYPICAL PARTNERSHIP BENEFITS</div>
+            <ul class="feature-list" style="font-size:14px">
+              <li><span class="fl-icon">✓</span>Early access to graduating cohorts</li>
+              <li><span class="fl-icon">✓</span>Priority interview scheduling</li>
+              <li><span class="fl-icon">✓</span>Portfolio previews before interviews</li>
+              <li><span class="fl-icon">✓</span>Custom skills briefing for your roles</li>
+              <li><span class="fl-icon">✓</span>Talent match recommendations</li>
+            </ul>
+          </div>
+        </div>
+        <div class="employer-form">
+          <h3 style="font-family:var(--font-display);font-size:20px;font-weight:700;margin-bottom:24px">Employer Inquiry</h3>
+          <div class="form-grid">
+            <div class="form-group"><label class="form-label">First Name</label><input type="text" class="form-input" placeholder="Sarah"></div>
+            <div class="form-group"><label class="form-label">Last Name</label><input type="text" class="form-input" placeholder="Johnson"></div>
+          </div>
+          <div class="form-group"><label class="form-label">Work Email</label><input type="email" class="form-input" placeholder="sarah@company.com"></div>
+          <div class="form-group"><label class="form-label">Company Name</label><input type="text" class="form-input" placeholder="Acme Technologies Ltd"></div>
+          <div class="form-group"><label class="form-label">Industry</label>
+            <select class="form-select"><option value="">Select industry</option><option>Fintech / Financial Services</option><option>E-commerce / Retail</option><option>Healthcare / Health Tech</option><option>Consulting / Advisory</option><option>Technology / SaaS</option><option>Media / Content</option><option>Other</option></select>
+          </div>
+          <div class="form-group"><label class="form-label">Roles You're Hiring For</label><input type="text" class="form-input" placeholder="e.g. Data Analyst, BI Analyst"></div>
+          <div class="form-group"><label class="form-label">Message (optional)</label><textarea class="form-textarea" placeholder="Tell us more about your hiring needs and timeline..."></textarea></div>
+          <button class="btn btn-primary" style="width:100%;justify-content:center;font-size:15px" onclick="alert('Thank you! We will reach out within 24 hours.')">Submit Inquiry →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     PAGE: PARTNERSHIP
+═══════════════════════════════════════════════════════════ -->
+<div class="page" id="page-partnership">
+  <section style="padding:80px 24px;background:var(--midnight);position:relative;overflow:hidden;text-align:center;">
+    <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%, rgba(99,102,241,0.1) 0%, transparent 65%);"></div>
+    <div class="container-sm" style="position:relative;z-index:1;">
+      <div class="label" style="justify-content:center">Partnerships & Collaboration</div>
+      <h1 class="headline headline-xl" style="margin-bottom:20px">Partner with us to build job-ready tech talent</h1>
+      <p class="subheadline" style="margin:0 auto">Cogniklab is building the talent infrastructure for emerging markets. We can't do it alone — and we're not trying to. Let's build it together.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="label" style="justify-content:center">Who We Partner With</div>
+        <h2 class="headline headline-md">Our Partnership Ecosystem</h2>
+      </div>
+      <div class="partner-types">
+        <div class="partner-type-card">
+          <span class="pt-icon">🏛️</span>
+          <div class="pt-title">Government & Agencies</div>
+          <p class="pt-desc">National and state agencies, ministries of education and digital economy, and workforce development bodies looking to build structured tech talent pipelines.</p>
+          <a href="#" class="btn-ghost" style="color:var(--teal-light);text-decoration:none;font-size:13px;display:inline-flex;align-items:center;gap:6px;margin-top:12px">Explore →</a>
+        </div>
+        <div class="partner-type-card">
+          <span class="pt-icon">🌍</span>
+          <div class="pt-title">Development Organizations</div>
+          <p class="pt-desc">International NGOs, development finance institutions, and impact organizations with mandates around digital inclusion, youth employment, and economic development.</p>
+          <a href="#" class="btn-ghost" style="color:var(--teal-light);text-decoration:none;font-size:13px;display:inline-flex;align-items:center;gap:6px;margin-top:12px">Explore →</a>
+        </div>
+        <div class="partner-type-card">
+          <span class="pt-icon">🏫</span>
+          <div class="pt-title">Academic Institutions</div>
+          <p class="pt-desc">Universities, polytechnics, and colleges looking to supplement academic programs with practical tech skills training and employment pathways for their students.</p>
+          <a href="#" class="btn-ghost" style="color:var(--teal-light);text-decoration:none;font-size:13px;display:inline-flex;align-items:center;gap:6px;margin-top:12px">Explore →</a>
+        </div>
+        <div class="partner-type-card">
+          <span class="pt-icon">🏢</span>
+          <div class="pt-title">Private Sector & Corporates</div>
+          <p class="pt-desc">Companies looking to sponsor training programs, build talent pipelines for their own teams, or support digital reskilling as part of their CSR or talent strategy.</p>
+          <a href="#" class="btn-ghost" style="color:var(--teal-light);text-decoration:none;font-size:13px;display:inline-flex;align-items:center;gap:6px;margin-top:12px">Explore →</a>
+        </div>
+        <div class="partner-type-card">
+          <span class="pt-icon">💰</span>
+          <div class="pt-title">Sponsors & Funders</div>
+          <p class="pt-desc">Individuals, foundations, and organizations that want to sponsor cohort seats, fund scholarships, or contribute to accessible tech education in underserved communities.</p>
+          <a href="#" class="btn-ghost" style="color:var(--teal-light);text-decoration:none;font-size:13px;display:inline-flex;align-items:center;gap:6px;margin-top:12px">Explore →</a>
+        </div>
+        <div class="partner-type-card">
+          <span class="pt-icon">🔧</span>
+          <div class="pt-title">Tech & Enablement Partners</div>
+          <p class="pt-desc">Software companies, cloud providers, and platform partners that can support our curriculum, provide tools access, or co-develop programs with us.</p>
+          <a href="#" class="btn-ghost" style="color:var(--teal-light);text-decoration:none;font-size:13px;display:inline-flex;align-items:center;gap:6px;margin-top:12px">Explore →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-section" style="padding:64px;text-align:left;display:grid;grid-template-columns:1fr auto;align-items:center;gap:40px;flex-wrap:wrap">
+        <div>
+          <div class="label">Ready to collaborate?</div>
+          <h2 class="headline headline-md" style="margin-bottom:12px">Let's build something meaningful together</h2>
+          <p style="font-size:15px;color:var(--text-secondary);max-width:520px">Whether you want to sponsor a cohort, build a talent pipeline, or co-design a program, we're ready to work with partners who share our vision.</p>
+        </div>
+        <div class="partner-actions" style="flex-direction:column;align-items:stretch">
+          <a href="#" class="btn btn-primary" onclick="navigate('contact')" style="justify-content:center">Become a Partner</a>
+          <a href="#" class="btn btn-secondary" onclick="navigate('contact')" style="justify-content:center">Request a Proposal</a>
+          <a href="#" class="btn btn-secondary" onclick="navigate('contact')" style="justify-content:center">Sponsor a Cohort</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     PAGE: BLOG
+═══════════════════════════════════════════════════════════ -->
+<div class="page" id="page-blog">
+  <section style="padding:72px 24px 40px;background:var(--midnight);">
+    <div class="container">
+      <div class="label">Insights & Perspectives</div>
+      <h1 class="headline headline-lg" style="margin-bottom:16px">Cogniklab Insights</h1>
+      <p class="subheadline">Perspectives on data careers, talent development, business intelligence, and the future of work in Africa and emerging markets.</p>
+    </div>
+  </section>
+  <section class="section section-alt">
+    <div class="container">
+      <!-- Categories -->
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:40px">
+        <button style="padding:8px 16px;background:var(--gradient-primary);border:none;border-radius:100px;color:white;font-size:13px;cursor:pointer;font-family:var(--font-body)">All</button>
+        <button style="padding:8px 16px;background:var(--surface);border:1px solid var(--border2);border-radius:100px;color:var(--text-secondary);font-size:13px;cursor:pointer;font-family:var(--font-body)">Data Careers</button>
+        <button style="padding:8px 16px;background:var(--surface);border:1px solid var(--border2);border-radius:100px;color:var(--text-secondary);font-size:13px;cursor:pointer;font-family:var(--font-body)">Business Intelligence</button>
+        <button style="padding:8px 16px;background:var(--surface);border:1px solid var(--border2);border-radius:100px;color:var(--text-secondary);font-size:13px;cursor:pointer;font-family:var(--font-body)">AI & Emerging Tech</button>
+        <button style="padding:8px 16px;background:var(--surface);border:1px solid var(--border2);border-radius:100px;color:var(--text-secondary);font-size:13px;cursor:pointer;font-family:var(--font-body)">Talent Development</button>
+        <button style="padding:8px 16px;background:var(--surface);border:1px solid var(--border2);border-radius:100px;color:var(--text-secondary);font-size:13px;cursor:pointer;font-family:var(--font-body)">Employer Insights</button>
+      </div>
+      <!-- Featured post -->
+      <div class="blog-featured">
+        <div class="blog-featured-img">📊</div>
+        <div class="blog-featured-content">
+          <div class="blog-cat">Data Careers</div>
+          <div class="blog-title" style="font-size:24px;margin-bottom:12px">Why Most Junior Data Analysts Struggle to Get Hired — And What Actually Fixes It</div>
+          <p class="blog-excerpt">The problem isn't talent. It's proof. Here's what separates candidates who get callbacks from those who don't — and how applied learning changes the equation entirely.</p>
+          <div class="blog-meta">
+            <span>Cogniklab Team</span>
+            <span>·</span>
+            <span>8 min read</span>
+            <span>·</span>
+            <span>April 2025</span>
+          </div>
+        </div>
+      </div>
+      <!-- Blog grid -->
+      <div class="grid-3">
+        <div class="blog-card"><div class="blog-img">🗄️</div><div class="blog-content"><div class="blog-cat">Business Intelligence</div><div class="blog-title">The 5 SQL Patterns Every BI Analyst Must Know</div><p class="blog-excerpt">From CTEs to window functions — the queries that separate analysts who get results from analysts who get stuck.</p><div class="blog-meta"><span>5 min read</span></div></div></div>
+        <div class="blog-card"><div class="blog-img">🤖</div><div class="blog-content"><div class="blog-cat">AI & Emerging Tech</div><div class="blog-title">What AI Operations Actually Looks Like in a Business</div><p class="blog-excerpt">The rise of the AI Ops role — and why companies are scrambling to find people who can deploy and manage AI tools in real workflows.</p><div class="blog-meta"><span>6 min read</span></div></div></div>
+        <div class="blog-card"><div class="blog-img">🌍</div><div class="blog-content"><div class="blog-cat">Talent Development</div><div class="blog-title">Building Verifiable Talent: The Infrastructure Africa Needs Now</div><p class="blog-excerpt">The gap between skilled professionals and employment in Africa isn't a skills problem. It's a trust infrastructure problem.</p><div class="blog-meta"><span>7 min read</span></div></div></div>
+        <div class="blog-card"><div class="blog-img">📈</div><div class="blog-content"><div class="blog-cat">Career Readiness</div><div class="blog-title">How to Build a Data Portfolio That Gets You Hired</div><p class="blog-excerpt">Not all portfolios are created equal. Here's the difference between a portfolio that impresses and one that gets ignored.</p><div class="blog-meta"><span>4 min read</span></div></div></div>
+        <div class="blog-card"><div class="blog-img">💡</div><div class="blog-content"><div class="blog-cat">Employer Insights</div><div class="blog-title">Why Hiring Managers Can't Trust Junior Resumes — And What We're Doing About It</div><p class="blog-excerpt">The junior hiring process is fundamentally broken. Cogniklab is building the fix from the ground up.</p><div class="blog-meta"><span>5 min read</span></div></div></div>
+        <div class="blog-card"><div class="blog-img">📊</div><div class="blog-content"><div class="blog-cat">Business Intelligence</div><div class="blog-title">Power BI vs Tableau vs Looker: What Beginners Should Actually Learn First</div><p class="blog-excerpt">An honest, employer-focused breakdown of the BI tool landscape for people who are just getting started.</p><div class="blog-meta"><span>5 min read</span></div></div></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     PAGE: WAITLIST / JOIN COHORT
+═══════════════════════════════════════════════════════════ -->
+<div class="page" id="page-waitlist">
+  <div class="waitlist-hero">
+    <div class="label" style="justify-content:center">Applications Open</div>
+    <h1 class="headline headline-xl" style="margin-bottom:20px">Join the Next Cogniklab Cohort</h1>
+    <p class="subheadline" style="margin:0 auto;text-align:center">10 weeks. Real skills. Real projects. Real outcomes. Reserve your seat in our next cohort and start building the career you've been working towards.</p>
+  </div>
+  <section style="padding:48px 24px 80px;background:var(--navy);">
+    <div class="waitlist-form-wrap" id="waitlistFormWrap">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;flex-wrap:wrap;gap:12px">
+        <div>
+          <div class="label">Enrollment Form</div>
+          <h2 style="font-family:var(--font-display);font-size:22px;font-weight:800">Reserve Your Seat</h2>
+        </div>
+        <div>
+          <div style="font-size:13px;color:var(--text-muted);margin-bottom:4px">Starting from</div>
+          <div style="font-family:var(--font-display);font-size:28px;font-weight:800;color:var(--white)">₦75,000</div>
+        </div>
+      </div>
+      <div class="form-grid">
+        <div class="form-group"><label class="form-label">Full Name</label><input type="text" class="form-input" id="wl-name" placeholder="Your full name"></div>
+        <div class="form-group"><label class="form-label">Email Address</label><input type="email" class="form-input" id="wl-email" placeholder="your@email.com"></div>
+      </div>
+      <div class="form-group"><label class="form-label">Phone Number</label><input type="tel" class="form-input" id="wl-phone" placeholder="+234 800 000 0000"></div>
+      <div class="form-group">
+        <label class="form-label">Selected Course</label>
+        <select class="form-select" id="wl-course">
+          <option value="">Choose a program</option>
+          <option>Data & Business Intelligence Analyst</option>
+          <option>AI Operations & Prompt Engineering (Waitlist)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Preferred Cohort Start</label>
+        <select class="form-select" id="wl-cohort">
+          <option value="">Select cohort</option>
+          <option>Cohort 01 — Q3 2025 (Forming Now)</option>
+          <option>Cohort 02 — Q4 2025</option>
+          <option>Notify me of future cohorts</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Why are you interested in Cogniklab?</label>
+        <textarea class="form-textarea" id="wl-why" placeholder="Tell us about your goals, where you're coming from, and what you want to achieve..."></textarea>
+      </div>
+      <button class="btn btn-primary" style="width:100%;justify-content:center;font-size:16px;padding:16px" onclick="submitWaitlist()">Submit Application →</button>
+      <p style="font-size:12px;color:var(--text-muted);text-align:center;margin-top:16px">No payment required now. We'll confirm your seat and send payment details.</p>
+    </div>
+
+    <!-- Success state -->
+    <div class="success-state" id="waitlistSuccess">
+      <div class="success-icon">✓</div>
+      <h2 style="font-family:var(--font-display);font-size:28px;font-weight:800;margin-bottom:12px">You're in the queue!</h2>
+      <p style="font-size:16px;color:var(--text-secondary);max-width:440px;margin:0 auto 28px">Your application has been received. We'll review it and send you a confirmation email within 24 hours with next steps.</p>
+      <div class="badge badge-green" style="margin-bottom:28px;padding:8px 16px;font-size:13px">● Application Submitted Successfully</div>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+        <a href="#" class="btn btn-secondary" onclick="navigate('course-da')">Review the Curriculum</a>
+        <a href="#" class="btn btn-secondary" onclick="navigate('blog')">Read Our Insights</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     PAGE: CONTACT
+═══════════════════════════════════════════════════════════ -->
+<div class="page" id="page-contact">
+  <section style="padding:80px 24px 48px;background:var(--midnight);">
+    <div class="container-sm">
+      <div class="label">Get in Touch</div>
+      <h1 class="headline headline-lg" style="margin-bottom:16px">Contact Cogniklab</h1>
+      <p class="subheadline">Whether you're a learner, employer, partner, or sponsor — we're ready to talk.</p>
+    </div>
+  </section>
+  <section class="section section-alt">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <div class="contact-info-item">
+            <div class="ci-icon">✉️</div>
+            <div><div class="ci-label">Email</div><div class="ci-val">hello@cogniklab.com</div></div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-icon">📞</div>
+            <div><div class="ci-label">Phone</div><div class="ci-val">+234 (0) 800 000 0000</div></div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-icon">📍</div>
+            <div><div class="ci-label">Location</div><div class="ci-val">Nigeria (Remote-First)</div></div>
+          </div>
+          <div style="margin-top:24px">
+            <div class="ci-label" style="margin-bottom:12px">Business Inquiries</div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <a href="#" style="font-size:14px;color:var(--electric-light);text-decoration:none" onclick="navigate('employers')">→ Employer & Hiring Partnership</a>
+              <a href="#" style="font-size:14px;color:var(--electric-light);text-decoration:none" onclick="navigate('partnership')">→ Institutional Partnership</a>
+              <a href="#" style="font-size:14px;color:var(--electric-light);text-decoration:none">→ Media & Press Inquiry</a>
+              <a href="#" style="font-size:14px;color:var(--electric-light);text-decoration:none">→ General Inquiry</a>
+            </div>
+          </div>
+          <div style="margin-top:28px">
+            <div class="ci-label" style="margin-bottom:12px">Follow Cogniklab</div>
+            <div class="social-links">
+              <a href="#" class="social-link" title="LinkedIn">in</a>
+              <a href="#" class="social-link" title="Twitter/X">𝕏</a>
+              <a href="#" class="social-link" title="Instagram">◎</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="employer-form">
+            <h3 style="font-family:var(--font-display);font-size:20px;font-weight:700;margin-bottom:24px">Send a Message</h3>
+            <div class="form-grid">
+              <div class="form-group"><label class="form-label">Full Name</label><input type="text" class="form-input" placeholder="Your name"></div>
+              <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input" placeholder="your@email.com"></div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Inquiry Type</label>
+              <select class="form-select">
+                <option>Program / Enrollment Inquiry</option>
+                <option>Employer Partnership</option>
+                <option>Institutional Partnership</option>
+                <option>Sponsorship</option>
+                <option>Media / Press</option>
+                <option>General</option>
+              </select>
+            </div>
+            <div class="form-group"><label class="form-label">Subject</label><input type="text" class="form-input" placeholder="How can we help?"></div>
+            <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" style="min-height:140px" placeholder="Tell us what you need..."></textarea></div>
+            <button class="btn btn-primary" style="width:100%;justify-content:center;font-size:15px" onclick="alert('Message sent! We will respond within 24 hours.')">Send Message →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════════ -->
+<footer id="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">
+        <div class="nav-logo-mark">C</div>
+        Cogniklab
+      </div>
+      <p class="footer-desc">Cogniklab builds job-ready tech talent and the systems that make that talent easier to trust, hire, and deploy. Cohort-based. Applied. Built for real outcomes.</p>
+      <div>
+        <div style="font-size:13px;color:var(--text-muted);margin-bottom:10px">Stay in the loop</div>
+        <div class="footer-newsletter">
+          <input type="email" class="footer-email-input" placeholder="Enter your email">
+          <button class="footer-sub-btn">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Programs</div>
+      <ul class="footer-links">
+        <li><a href="#" onclick="navigate('course-da')">Data & BI Analyst</a></li>
+        <li><a href="#" onclick="navigate('programs')">All Programs</a></li>
+        <li><a href="#" onclick="navigate('waitlist')">Join a Cohort</a></li>
+        <li><a href="#" onclick="navigate('waitlist')">Waitlist</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Company</div>
+      <ul class="footer-links">
+        <li><a href="#" onclick="navigate('about')">About Cogniklab</a></li>
+        <li><a href="#" onclick="navigate('blog')">Insights & Blog</a></li>
+        <li><a href="#" onclick="navigate('contact')">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Partners</div>
+      <ul class="footer-links">
+        <li><a href="#" onclick="navigate('employers')">For Employers</a></li>
+        <li><a href="#" onclick="navigate('partnership')">Partnerships</a></li>
+        <li><a href="#" onclick="navigate('partnership')">Sponsor a Cohort</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Connect</div>
+      <ul class="footer-links">
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Twitter / X</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">hello@cogniklab.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2025 Cogniklab. All rights reserved.</div>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+// ─── NAVIGATION ──────────────────────────────────────────────
+function navigate(pageId) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  const target = document.getElementById('page-' + pageId);
+  if (target) {
+    target.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    initPage(pageId);
+  }
+}
+
+function initPage(pageId) {
+  if (pageId === 'course-da') initCurriculum();
+  if (pageId === 'course-da') initFAQ();
+}
+
+function toggleMobileMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+
+function scrollToForm() {
+  navigate('employers');
+  setTimeout(() => {
+    const el = document.getElementById('employerForm');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  }, 300);
+}
+
+// ─── CURRICULUM DATA ─────────────────────────────────────────
+const curriculum = [
+  { week: 'Week 01', title: 'Foundations of Data & Business Intelligence', body: 'Introduction to data thinking, data types, business intelligence concepts, the data analyst role, and the modern data stack. We establish the why before the how.' },
+  { week: 'Week 02', title: 'Excel Fundamentals', body: 'Spreadsheet navigation, formulas, functions (VLOOKUP, IF, SUMIF, COUNTIF), basic data entry, and formatting for analysis-ready workbooks.' },
+  { week: 'Week 03', title: 'Excel for Business Analysis', body: 'PivotTables, PivotCharts, data cleaning techniques, conditional formatting, and building your first business analysis report in Excel.' },
+  { week: 'Week 04', title: 'SQL Fundamentals', body: 'Introduction to relational databases, SQL syntax, SELECT, WHERE, GROUP BY, ORDER BY, and writing your first analytical queries on real datasets.' },
+  { week: 'Week 05', title: 'SQL for Business Insights', body: 'JOINs (INNER, LEFT, RIGHT), subqueries, CTEs, window functions, and business-level analysis using SQL. Mini project: business insight report from a database.' },
+  { week: 'Week 06', title: 'Python Foundations for Data', body: 'Python environment setup, basic syntax, data types, loops, functions, and introduction to the Pandas and NumPy libraries for data work.' },
+  { week: 'Week 07', title: 'Python for Analysis & Data Cleaning', body: 'Working with messy real-world datasets using Pandas: data cleaning, transformation, aggregation, and exploratory data analysis (EDA) with visualizations.' },
+  { week: 'Week 08', title: 'Power BI Foundations', body: 'Power BI Desktop, connecting data sources, data modeling, basic DAX, building your first interactive dashboard, and publishing to Power BI Service.' },
+  { week: 'Week 09', title: 'Data Storytelling & Dashboard Design', body: 'Data visualization principles, chart selection, stakeholder communication, building executive-level reports, and designing dashboards that drive decisions.' },
+  { week: 'Week 10', title: 'Capstone Project, Portfolio & Job Readiness', body: 'Full capstone project brief, portfolio compilation, mock presentation to a panel, LinkedIn and CV optimization, and job readiness preparation. Graduation.' },
+];
+
+function initCurriculum() {
+  const el = document.getElementById('curriculum');
+  if (!el || el.innerHTML !== '') return;
+  el.innerHTML = curriculum.map((w, i) => `
+    <div class="curriculum-week" id="cw${i}">
+      <div class="week-header" onclick="toggleWeek(${i})">
+        <span class="week-num">${w.week}</span>
+        <span class="week-title">${w.title}</span>
+        <span class="week-chevron">▾</span>
+      </div>
+      <div class="week-body">${w.body}</div>
+    </div>
+  `).join('');
+}
+
+function toggleWeek(i) {
+  const el = document.getElementById('cw' + i);
+  el.classList.toggle('open');
+}
+
+// ─── FAQ DATA ─────────────────────────────────────────────────
+const faqs = [
+  { q: 'Do I need any prior coding or data experience?', a: 'No prior experience is needed. The program is designed to be beginner-friendly and assumes no technical background. If you can use a computer, you can succeed in this program.' },
+  { q: 'How much time do I need to commit each week?', a: 'Expect to commit roughly 15–20 hours per week — including live sessions, project work, and review. The program is intensive by design, because results require real investment.' },
+  { q: 'Is the program fully online?', a: 'Yes. All sessions are delivered live online via video, with asynchronous resources for review. You can participate from anywhere with a stable internet connection.' },
+  { q: 'What is the refund or cancellation policy?', a: 'We offer a full refund if you withdraw before the end of Week 1. After that, we work with learners on a case-by-case basis. We want every learner to succeed, not just to collect fees.' },
+  { q: 'Will I get a certificate?', a: 'Yes. Upon successful completion of the program and capstone project, you will receive a Cogniklab Certificate of Completion. More importantly, you will have a verified portfolio of real work.' },
+  { q: 'How is Cogniklab different from learning on YouTube or Udemy?', a: 'Self-paced online content teaches concepts but rarely produces employment-ready professionals. Cogniklab provides structured cohort accountability, project-based deliverables, live instruction, peer review, and job-readiness support — all designed to produce a portfolio and verified skills, not just knowledge.' },
+];
+
+function initFAQ() {
+  const el = document.getElementById('faqList');
+  if (!el || el.innerHTML !== '') return;
+  el.innerHTML = faqs.map((f, i) => `
+    <div class="faq-item" id="faq${i}">
+      <div class="faq-q" onclick="toggleFaq(${i})">${f.q}<span>▾</span></div>
+      <div class="faq-a">${f.a}</div>
+    </div>
+  `).join('');
+}
+
+function toggleFaq(i) {
+  document.querySelectorAll('.faq-item').forEach((el, idx) => {
+    if (idx !== i) el.classList.remove('open');
+  });
+  document.getElementById('faq' + i).classList.toggle('open');
+}
+
+// ─── WAITLIST FORM ────────────────────────────────────────────
+function submitWaitlist() {
+  const name = document.getElementById('wl-name').value.trim();
+  const email = document.getElementById('wl-email').value.trim();
+  const course = document.getElementById('wl-course').value;
+  if (!name || !email || !course) {
+    alert('Please fill in your name, email, and select a course to continue.');
+    return;
+  }
+  document.getElementById('waitlistFormWrap').style.display = 'none';
+  const success = document.getElementById('waitlistSuccess');
+  success.style.display = 'block';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ─── SCROLL REVEAL ────────────────────────────────────────────
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// ─── INIT ─────────────────────────────────────────────────────
+initCurriculum();
+initFAQ();
+</script>
+</body>
+</html>
